@@ -52,7 +52,7 @@ public class RealEstate {
 	 */
 	private void initialize() {
 		frmRealEstate = new JFrame();
-		frmRealEstate.setBounds(100, 100, 490, 593);
+		frmRealEstate.setBounds(100, 100, 443, 527);
 		frmRealEstate.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmRealEstate.getContentPane().setLayout(null);
 		
@@ -104,22 +104,22 @@ public class RealEstate {
 		
 		JButton btnAdd = new JButton("Add");
 		btnAdd.setFont(new Font("Tahoma", Font.BOLD, 13));
-		btnAdd.setBounds(10, 391, 200, 50);
+		btnAdd.setBounds(10, 367, 200, 50);
 		frmRealEstate.getContentPane().add(btnAdd);
 		
 		JButton btnDelete = new JButton("Delete");
 		btnDelete.setFont(new Font("Tahoma", Font.BOLD, 13));
-		btnDelete.setBounds(220, 391, 200, 50);
+		btnDelete.setBounds(220, 367, 200, 50);
 		frmRealEstate.getContentPane().add(btnDelete);
 		
 		JButton btnClear = new JButton("Clear");
 		btnClear.setFont(new Font("Tahoma", Font.BOLD, 13));
-		btnClear.setBounds(10, 478, 200, 50);
+		btnClear.setBounds(10, 428, 200, 50);
 		frmRealEstate.getContentPane().add(btnClear);
 		
 		JButton btnFind = new JButton("Find");
 		btnFind.setFont(new Font("Tahoma", Font.BOLD, 13));
-		btnFind.setBounds(220, 478, 200, 50);
+		btnFind.setBounds(220, 428, 200, 50);
 		frmRealEstate.getContentPane().add(btnFind);
 		
 		textLotNumber = new JTextField();
