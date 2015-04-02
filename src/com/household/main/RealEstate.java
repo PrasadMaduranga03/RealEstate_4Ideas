@@ -18,8 +18,6 @@ import javax.swing.JTextField;
 
 public class RealEstate {
 	
-	
-	
 
 	private JFrame frmRealEstate;
 	private JTextField textLotNumber;
