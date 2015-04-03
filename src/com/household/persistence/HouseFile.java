@@ -1,9 +1,5 @@
 package com.household.persistence;
 
-<<<<<<< HEAD
-public class HouseFile {
-
-=======
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
@@ -50,6 +46,36 @@ public class HouseFile {
 		}								
 	}
 	
-		
->>>>>>> 5b9898710ecf0ded6a6d2f84bb53a0607dd8d68a
+	
+	/**
+	 * Method used for save each lightHouse entities
+	 * @param lightHouse
+	 */
+	public LinkedList<ListHouse> retreiveHouseHoldRecord(){
+		LinkedList<ListHouse> allHouseHoldList = new LinkedList<ListHouse>();
+		ListHouse listHouse = null;
+		try {
+			// String sReadline;
+			FileReader file = new FileReader("D:/Java_Project/RealEstateProject/hello.txt");
+			Scanner scanLine=new Scanner(file);
+			while(scanLine.hasNextLine())	{				
+			String csvFileString =scanLine.nextLine();
+			//create each house hold 
+			ListHouse household = new ListHouse();
+				String householdFieldarrInfo[] = csvFileString.split(",");
+				household.setLotNo(Integer.parseInt(householdFieldarrInfo[0]));
+				household.setFirstName(householdFieldarrInfo[1]);
+				household.setLastName(householdFieldarrInfo[2]);
+				household.setPrice(new BigDecimal(householdFieldarrInfo[3]));
+				household.setSquareFeet(Double.parseDouble(householdFieldarrInfo[4]));
+				household.setNoOfBedRooms(Integer.parseInt(householdFieldarrInfo[5]));
+				//
+				allHouseHoldList.add(household);
+				}
+				scanLine.close();
+		}catch(Exception ex){
+			ex.printStackTrace();
+		}
+		return allHouseHoldList;
+	}	
 }
