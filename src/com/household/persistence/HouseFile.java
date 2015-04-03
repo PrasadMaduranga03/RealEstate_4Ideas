@@ -17,7 +17,7 @@ public class HouseFile {
 	 * Method used for save each lightHouse entities
 	 * @param lightHouse
 	 */
-	public void saveHouseHoldRecord(ListHouse listHouse){
+	public void saveHouseHoldRecord(ListHouse listHouse, boolean newfile){
 		try {
 			File file = new File("D:/Java_Project/RealEstateProject/hello.txt");
 			// if file doesnt exists, then create it
