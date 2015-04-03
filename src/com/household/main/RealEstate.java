@@ -1,12 +1,17 @@
 package com.household.main;
 
 import java.awt.EventQueue;
+
 import javax.swing.JFrame;
 import javax.swing.JButton;
 //import javax.swing.JOptionPane;
 import javax.swing.JLabel;
+
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.JTextField;
 
 
@@ -122,8 +127,18 @@ public class RealEstate {
 		frmRealEstate.getContentPane().add(btnDelete);
 		
 		JButton btnClear = new JButton("Clear");
+
+		btnClear.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				clearTextFields();				
+			}
+		});
+		btnClear.setFont(new Font("Tahoma", Font.BOLD, 13));
+		btnClear.setBounds(10, 428, 200, 50);
+
 		btnClear.setFont(new Font("Arial", Font.BOLD, 12));
 		btnClear.setBounds(10, 428, 197, 50);
+
 		frmRealEstate.getContentPane().add(btnClear);
 		
 		JButton btnFind = new JButton("Find");
