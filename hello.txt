@@ -1,0 +1,5 @@
+01,PRASAD,MADURANGA,100, 10,2,
+02,karuna,amman,32,8,2,
+50,rama,seetha,190000,34589.0,5444
+51,Anura,Nisham,4500000,78.0,3
+34,chamara,kasun,78,90.0,67
