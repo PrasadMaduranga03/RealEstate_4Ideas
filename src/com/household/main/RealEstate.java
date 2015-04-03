@@ -23,10 +23,7 @@ import com.household.model.ListHouse;
 import com.household.persistence.HouseFile;
 
 public class RealEstate {
-<<<<<<< HEAD
-=======
-	
->>>>>>> e7bc282a2b01d92f6022f6c0878b3d453fbb4e08
+
 
 	private JFrame frmRealEstate;
 	private JTextField textLotNumber;
