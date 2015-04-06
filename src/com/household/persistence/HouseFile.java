@@ -25,7 +25,7 @@ public class HouseFile {
 				file.createNewFile();
 			} 
 				
-				FileWriter writer = new FileWriter(file.getAbsoluteFile(), newfile);
+				FileWriter writer = new FileWriter(file.getAbsoluteFile(), true);
 				BufferedWriter lno = new BufferedWriter(writer);
 				// http://www.mkyong.com/java/how-to-export-data-to-csv-file-java/
 				for (int i = 0; i < 1; i++) {
